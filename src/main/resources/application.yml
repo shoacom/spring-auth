@@ -1,0 +1,18 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /auth
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.springframework.security.oauth2: TRACE
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.168.80.11:3306/test?characterEncoding=utf-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: 123456
